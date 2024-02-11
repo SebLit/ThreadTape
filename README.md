@@ -1,10 +1,8 @@
 # ThreadTape
 
-The double sided red tape that sticks the Android Lifecycle to asynchronous tasks and events in
-Java.<br>
-Specifically, callbacks will wait for their corresponding ``Lifecycle`` to become active again
-before being executed on the main Thread while the async work is executed separately but in certain
-synchronicity to its callbacks.
+Improved replacement for the deprecated AsyncTask Android API. Callbacks will wait for their corresponding ``Lifecycle`` to become active again
+before being executed on the main Thread while the async work is executed separately on the calling Thread.
+Also includes an Event API. Events will be dispatched to Consumers, once their corresponding ``Lifecycle`` is active.
 
 ## Events
 
