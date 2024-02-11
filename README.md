@@ -41,7 +41,7 @@ But if desired, the ``Consumer`` can be registered to the specific event type on
 behaviour.
 
 ~~~
-manager..register(owner, UserLogoutEvent.class, this::handleLogoutEvent, false);
+manager.register(owner, UserLogoutEvent.class, this::handleLogoutEvent, false);
 ~~~
 
 Finally fire your event. The manager will let you know if your event has any potential ``Consumer``s
